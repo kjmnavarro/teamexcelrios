@@ -28,7 +28,7 @@ p{
 		  rgba(0, 0, 0, 0.6),
 		  rgba(0, 0, 0, 0.6)
 		),
-		url('images/allblackteam.jpg');
+		url('images/allblackteam.JPG');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -136,7 +136,7 @@ a:hover{
 
 #te_img4{
 	float: right;
-	background: url('images/allblackteam.jpg');
+	background: url('images/allblackteam.JPG');
 	background-size: cover;
 	width: 55%;
 	height: 320px;
