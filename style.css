@@ -1,0 +1,190 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.herobanner1{
+	background: 
+		linear-gradient(
+		  rgba(0, 0, 0, 0.6),
+		  rgba(0, 0, 0, 0.6)
+		),
+		url('images/allblackteam.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	padding-top: 40vh;
+	padding-bottom: 25vh;
+}
+
+#teamextitle_cont{
+	position: relative;
+	top: -50vh;
+	text-align: center;
+}
+
+.teamex_title{
+	font-size: 5em;
+	font-weight: bold;
+	color: #fff;
+}
+
+.btnscrolldown-cont{
+	position: relative;
+	top: -25vh;
+}
+
+.te_fontblue{
+	color: #253858;
+}
+
+.te_fontgreen{
+	color: #228B22;
+}
+
+.te_hr{
+	border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+}
+
+.te_procimg{
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: #253858;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.bg-foot {
+	background: #0B0C10;
+	color: #e6e6e6;
+	font-size: 0.8rem;
+	letter-spacing: 3px;
+}
+
+/*----------------ANIMATE FLIP------------------*/
+
+.card-img-top{
+	perspective: 1000px; /* 3D effect */
+	transition: transform 0.8s;
+  	transform-style: preserve-3d;
+}
+
+.card-img-top:hover{
+	transform: rotateY(180deg);
+}
+
+
+/*=================================Carousel Meet the Team======================*/
+#te_img1,
+#te_img2,
+#te_img5{
+	float: left;
+}
+
+#te_img1{
+	background: url('images/1111.jpg');
+	background-size: cover;
+	width: 38%;
+	height: 250px;
+	margin-right: 2%;
+}
+
+#te_img2{
+	background: url('images/2222.jpg');
+	background-size: cover;
+	width: 28%;
+	height: 180px;
+	margin-right: 2%;
+}
+
+#te_img3{
+	float: right;
+	background: url('images/3333.jpg');
+	background-size: cover;
+	width: 28%;
+	height: 180px;
+	margin-right: 2%;
+}
+
+#te_img4{
+	float: right;
+	background: url('images/allblackteam.jpg');
+	background-size: cover;
+	width: 55%;
+	height: 320px;
+	margin-top: 2%;
+}
+
+#te_img5{
+	background: url('images/55555.jpg');
+	background-size: cover;
+	width: 43%;
+	height: 250px;
+	margin-top: 2%;
+}
+
+
+/*---------------------IPAD PRO---------------------*/
+@media only screen and (min-width: 961px) and (max-width: 1024px) {
+	
+	.herobanner1{
+		width: 100%;
+		background-size: contain;
+		padding: 0;
+	}
+
+}
+
+
+/*---------------------Tablet---------------------*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	
+	.herobanner1{
+		width: 100%;
+		background-size: cover;
+		padding: 0;
+	}
+
+}
+
+/*----------------Mobile-------------------*/
+@media only screen and (max-width: 401px) {
+
+	.herobanner1{
+		width: 100%;
+		background-size: cover;
+		padding: 0;
+	}
+
+	.teamex_title{
+		font-size: 3em;
+	}
+}
